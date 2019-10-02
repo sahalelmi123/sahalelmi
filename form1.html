@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log in here</title>
+	<style type="text/css">
+		body{
+    margin: 0;
+    padding: 0;
+    background: url("imgs/cibs4.jpg");
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+.loginBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 420px;
+    height: 350px;
+    padding: 40px 80px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,0.5);
+}
+
+h2{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    color: yellow;
+}
+
+.loginBox p{
+
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: white;
+}
+
+.loginBox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.loginBox input[type="text"], .loginBox input[type="password"]
+{
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+}
+
+.loginBox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    background: rgb(255 38 126);
+    cursor: pointer;
+}
+
+.loginBox input[type="submit"]:hover{
+    background: #89179e;
+    color: #2ecc71;
+}
+.loginBox a{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+::placeholder{
+    color: rgba(255,255,255,0.5);
+}
+
+.user{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    overflow: hidden;
+    top: calc(-107px/2);
+    left: calc(50% - 50px);
+    border-radius: 50%;
+}
+	</style>
+</head>
+<body>
+	<div class="loginBox">
+        <h2>Log in Here</h2>
+        <form >
+            <img src="imgs/cibs2.jpg" class="user">
+
+            <p>Email</p>
+            <input type="text" name="" placeholder="Email">
+
+            <p>Password</p>
+            <input type="Password" name="" placeholder="Password">
+
+            <input type="submit"  name="" value="Sign in">
+            
+            <a href="#">Forget password</a>
+           
+        </form>
+    </div>
+</body>
+</html>
